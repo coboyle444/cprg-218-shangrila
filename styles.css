@@ -9,3 +9,10 @@ header {
     background-color: lightgrey;
 }
 
+#main-nav {
+    display: none;
+}
+
+#main-nav.active {
+    display: grid;
+}

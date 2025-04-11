@@ -4,7 +4,7 @@ const navToggle = document.getElementById('hamburger');
 const menuList = document.getElementById ('main-nav');
 
 navToggle.addEventListener('click', function(){
-    menuList.classList.toggle('show')
+    menuList.classList.toggle('active')
 });
 
 
