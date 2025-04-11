@@ -1,3 +1,7 @@
+const weather = document.getElementById('weather');
+const weatherIcon = document.getElementById('weathericon');
+
+
 fetch('https://api.openweathermap.org/data/2.5/weather?q=Cancun&APPID=b473fd53043a7c848e3b9ed5682323d2&units=metric')
 .then(response => response.json ())
 .then(data => {
@@ -8,9 +12,9 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=Cancun&APPID=b473fd5304
 
 const iconCode = data.weather[0].icon;
 const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
-document.getElementById('weathericon').src = iconUrl;
-document.getElementById('weathericon').alt = data.weather[0].description;
-console.log("Weather icon url", iconUrl);
+weatherIcon.src = iconUrl;
+weatherIcon.alt = data.weather[0].description;
+console.log("Icon link please work", iconUrl); 
 
 
 
