@@ -9,10 +9,5 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=Cancun&appid=b473fd5304
     weather.textContent = "Current Weather in Cancun : " +data.main.temp+" \u00B0C";
 });
 
-const iconCode = data.weather[0].icon;
-const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
-    document.getElementById('weathericon').src = iconUrl;
-    document.getElementById('weathericon').alt = data.weather[0].description;
-
 /* does not work */
 
