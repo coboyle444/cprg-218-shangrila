@@ -1,5 +1,11 @@
 const weather = document.getElementById('weather');
 const weatherIcon = document.getElementById('weathericon');
+const navToggle = document.getElementById('hamburger');
+const menuList = document.getElementById ('main-nav');
+
+navToggle.addEventListener('click', function(){
+    menuList.classList.toggle('show')
+});
 
 
 fetch('https://api.openweathermap.org/data/2.5/weather?q=Cancun&APPID=b473fd53043a7c848e3b9ed5682323d2&units=metric')
@@ -16,6 +22,4 @@ weatherIcon.alt = data.weather[0].description;
 console.log("Icon link please work", iconUrl); 
 });
 
-
-/* does not work */
 
