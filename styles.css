@@ -16,3 +16,12 @@ header {
 #main-nav.active {
     display: grid;
 }
+
+@media (min-width: 769px) {
+    #main-nav {
+        display: grid;
+    }
+    #hamburger {
+        display: none;
+    }
+}
