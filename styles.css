@@ -5,8 +5,10 @@
 
 }
 
+
 header {
-    background-color: lightgrey;
+    background-color: #39687A;
+    font-family: "DM Serif Text";
 }
 
 header #logo {
@@ -16,14 +18,21 @@ header #logo {
 #header-banner {
     background-image: url('./media/hero.jpg');
     background-size: cover;
-    background-position: center
+    background-position: center;
     background-repeat: no-repeat;
     height: 300px;
     color: white;
+    text-shadow: 1px 0px 10px black;
     display: flex;
     flex-direction: column;
     padding: 2em;
     align-items: center;
+    justify-content: center;
+}
+
+#header-banner p {
+    text-align: center;
+    padding: 2rem;
 }
 
 #main-nav {
@@ -31,9 +40,84 @@ header #logo {
 }
 
 #main-nav.active {
-    display: grid;
+    display: flex;
+
 }
 
+#main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: lightyellow;
+    padding: 0.5em;
+}
+
+#currentweather {
+    color: white;
+    text-align: right;
+    padding-top: 1em;
+}
+ 
+#currentweather img {
+    max-width: 60px;
+}
+
+#hamburger {
+    font-size: 40px;
+    float: right;
+    background-color: #39687A;
+    color: white;
+    border-color: #39687A;
+}
+
+#booking {
+    background-color: rgb(241, 203, 134);
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 1em;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-color: rgb(191, 212, 225);
+    box-shadow: 0 4px 16px 0;
+}
+
+#booking:hover {
+    background-color: rgb(233, 161, 28);
+    color: white;
+}
+
+body {
+    background-color: #39687A;
+    color: white;
+    font-family: "Inter";
+}
+
+main section {
+    padding: 1em;
+    margin: 1em;
+    background-color: rgb(70, 129, 129);
+    border-radius: 2em;
+
+}
+
+main h2 {
+    background-color: rgb(199, 205, 145);
+    padding: 0.5em;
+    border-radius: 2em;
+    color: rgb(55, 55, 55);
+}
+
+
+
+
+rgb(0, 51, 255)rgb(39, 60, 141)
 @media (min-width: 768px) {
     #main-nav {
         display: grid;
@@ -42,3 +126,4 @@ header #logo {
         display: none;
     }
 }
+
