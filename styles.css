@@ -9,6 +9,23 @@ header {
     background-color: lightgrey;
 }
 
+header #logo {
+    width: 50%;
+}
+
+#header-banner {
+    background-image: url('./media/hero.jpg');
+    background-size: cover;
+    background-position: center
+    background-repeat: no-repeat;
+    height: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    align-items: center;
+}
+
 #main-nav {
     display: none;
 }
@@ -17,7 +34,7 @@ header {
     display: grid;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     #main-nav {
         display: grid;
     }
