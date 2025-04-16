@@ -2,9 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
-
 
 header {
     background-color: #39687A;
@@ -12,7 +10,7 @@ header {
 }
 
 header #logo {
-    width: 50%;
+    width: 30%;
 }
 
 #header-banner {
@@ -20,7 +18,7 @@ header #logo {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 300px;
+    height: 350px;
     color: white;
     text-shadow: 1px 0px 10px black;
     display: flex;
@@ -41,6 +39,10 @@ header #logo {
 
 #main-nav.active {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
 
 }
 
@@ -101,9 +103,11 @@ body {
 
 main section {
     padding: 1em;
-    margin: 1em;
+    margin: 2em;
+    line-height: 2em;
     background-color: rgb(70, 129, 129);
     border-radius: 2em;
+    box-shadow: 5px 5px 2px 5px rgb(61, 116, 139);
 
 }
 
@@ -112,12 +116,52 @@ main h2 {
     padding: 0.5em;
     border-radius: 2em;
     color: rgb(55, 55, 55);
+    text-align: center;
+
 }
 
+main section p {
+    text-indent: 15px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
 
+main button {
+    background-color: rgb(241, 203, 134);
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    display: block;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    border-color: rgb(191, 212, 225);
+    box-shadow: 0 4px 16px 0;
 
+}
 
-rgb(0, 51, 255)rgb(39, 60, 141)
+main button a {
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+}
+
+footer ul {
+    list-style-type: none;
+    line-height: 1.8;
+}
+
+footer li a {
+    text-decoration: none;
+    color: rgb(241, 203, 134);
+}
+
 @media (min-width: 768px) {
     #main-nav {
         display: grid;
@@ -126,4 +170,3 @@ rgb(0, 51, 255)rgb(39, 60, 141)
         display: none;
     }
 }
-
