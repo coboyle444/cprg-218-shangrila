@@ -149,6 +149,17 @@ details {
     color: rgb(245, 232, 210);
 }
 
+marquee {
+    color: lightblue;
+    font-family: "DM Serif Text";
+    text-transform: uppercase;
+    line-height: 2;
+    font-size: 18px;
+    text-shadow: 1px 1px 0 #0c41ab;
+    transform: translate(-1px, -1px);
+    background-color: #115b63;
+}
+
 
 main button {
     background-color: rgb(241, 203, 134);
