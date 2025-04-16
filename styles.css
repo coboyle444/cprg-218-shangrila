@@ -42,7 +42,7 @@ header #logo {
     text-decoration: none;
     color: lightyellow;
     padding: 0.5em;
-}
+} 
 
 #header-banner {
     background-image: url('./media/hero.jpg');
@@ -187,6 +187,21 @@ main img {
     margin: auto;
 }
 
+blockquote {
+    position: relative;
+    padding: 2.5rem 2rem 4rem;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+blockquote:before {
+    content: open-quote open-quote;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+
+
 footer {
     text-align: center;
     padding: 1em;
@@ -204,7 +219,10 @@ footer li a {
 
 @media (min-width: 768px) {
     #main-nav {
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        float: right;
     }
     #hamburger {
         display: none;
