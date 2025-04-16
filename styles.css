@@ -13,6 +13,37 @@ header #logo {
     width: 30%;
 }
 
+#main-nav {
+    display: none;
+}
+
+#main-nav.active {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#main-nav li {
+    border: 2px solid #6b838e;
+    background-color: #062e3b;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: lightyellow;
+    padding: 0.5em;
+}
+
 #header-banner {
     background-image: url('./media/hero.jpg');
     background-size: cover;
@@ -26,6 +57,7 @@ header #logo {
     padding: 2em;
     align-items: center;
     justify-content: center;
+    margin-top: 1em;
 }
 
 #header-banner p {
@@ -33,38 +65,11 @@ header #logo {
     padding: 2rem;
 }
 
-#main-nav {
-    display: none;
-}
-
-#main-nav.active {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-
-}
-
-#main-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 1em;
-    display: flex;
-    flex-direction: row;
-    
-}
-
-#main-nav a {
-    text-decoration: none;
-    color: lightyellow;
-    padding: 0.5em;
-}
-
 #currentweather {
     color: white;
     text-align: right;
     padding-top: 1em;
+    padding-right: 1em;
 }
  
 #currentweather img {
@@ -121,10 +126,29 @@ main h2 {
 }
 
 main section p {
-    text-indent: 15px;
+    padding: 1em;
     line-height: 1.5;
-    padding-bottom: 10px;
 }
+
+ ul {
+    padding: 1em;
+    list-style-type: none;
+}
+
+main li::before {
+    content: "➢";
+    padding-right: 8px;
+}
+
+li strong {
+    color: rgb(240, 244, 151);
+}
+
+
+details {
+    color: rgb(245, 232, 210);
+}
+
 
 main button {
     background-color: rgb(241, 203, 134);
@@ -145,6 +169,11 @@ main button {
 main button a {
     text-decoration: none;
     color: rgb(49, 49, 49);
+}
+
+main img {
+    display: block;
+    margin: auto;
 }
 
 footer {
